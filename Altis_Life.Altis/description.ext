@@ -1,0 +1,343 @@
+author = "Tonic";
+onLoadName = "Altis Life RPG v3.1.4.8";
+onLoadMission = "A RPG game mode developed by Tonic";
+joinUnassigned = 1;
+respawn = BASE;
+respawndelay = 7;
+disabledAI = true;
+disableChannels[]={0,1,2};
+enableDebugConsole = 1;
+respawnDialog = 0;
+briefing = 0;
+
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 83;
+};
+
+wreckLimit = 13;
+wreckRemovalMinTime = 320;
+wreckRemovalMaxTime = 1200;
+corpseLimit = 150;
+corpseRemovalMinTime = 999;
+corpseRemovalMaxTime = 9999;
+
+#include "dialog\MasterHandler.h"
+
+class RscTitles
+{
+	#include "dialog\ui.hpp"
+	#include "dialog\progress.hpp"
+	#include "dialog\hud_nameTags.h"
+    #include "extra\=BTC=_Logistic\=BTC=_Lift\=BTC=_Hud.h"
+	#include "dialog\save.h"
+	#include "extra\AF_Keypad\AF_KP_defines.hpp"
+	#include "extra\AF_Keypad\AF_KP_dialogs.hpp"
+	#include "dialog\statusBar.hpp"
+};
+
+class CfgFunctions
+{
+	#include "Functions.h"
+};
+
+class CfgSounds
+{
+  sounds[] = {};
+  class SirenLong
+  {
+    name = "SirenLong";
+    sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+    titles[] = {};
+  };
+  class noknews
+  {
+    name = "noknews";
+    sound[] = {"\sounds\noknews.ogg", 0.5, 1};
+    titles[] = {};
+  };
+  class tazersound
+  {
+    name = "Tazersound";
+    sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+    titles[] = {};
+  };  
+  class alert
+	{
+    name = "alert";
+    sound[] = {"\sounds\alert.ogg", 1.0, 1};
+    titles[] = {};
+	};
+  class empwarn
+  {
+    name = "empwarn";
+    sound[] = {"\sounds\empwarn.ogg", 1.0, 1};
+    titles[] = {};
+  };
+  class empacsound
+  {
+    name = "empacsound";
+    sound[] = {"sounds\empac.ogg", db-5, 1};
+    titles[] = {};
+  };
+  class handcuff
+  {
+    name = "handcuff";
+    sound[] = {"\sounds\handcuffs.ogg", 0.25, 1};
+    titles[] = {};
+  };
+  	// sounds
+  class bank_alarm
+  {
+	name = "bank_alarm";  
+	sound[] = {"\sounds\alarm.ogg", 1.0, 1};  
+	titles[] = {};
+  };
+  class lock_sound
+  {
+	name = "lock_sound";  
+	sound[] = {"\sounds\vehicle_lock.ogg", 1.0, 1};  
+	titles[] = {};
+  };  
+  class unlock_sound
+  {
+	name = "unlock_sound";  
+	sound[] = {"\sounds\unlock.ogg", 1.0, 1};  
+	titles[] = {};
+  };
+  class notarzt_sound
+  {
+	name = "notarzt_sound";  
+	sound[] = {"\sounds\notarzt_sirene.ogg", 1.0, 1};  
+	titles[] = {};
+  };
+  class intro
+  {
+	name = "intro";  
+	sound[] = {"\sounds\intro.ogg", 1.0, 1};  
+	titles[] = {};
+  };  
+	class flashbang
+	{
+		name = "flashbang";
+		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	class spraycan
+    {
+    name = "spraycan";    
+    sound[] = {"\sounds\spraycan.ogg", 1.0, 1};
+    titles[] = {};
+    };
+	class Yelp
+	{
+	name = "Yelp";
+	sound[] = {"\sounds\Yelp.ogg", 1.0, 1};
+	titles[] = {};
+	};
+	class zhorde
+	{
+		name = "zombie_horde";
+		sound[] = {"\infected\sounds\horde1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zhurt1
+	{
+		name = "zombie_hurt1";
+		sound[] = {"\infected\sounds\hurt1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zhurt2
+	{
+		name = "zombie_hurt2";
+		sound[] = {"\infected\sounds\hurt2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zhurt3
+	{
+		name = "zombie_hurt3";
+		sound[] = {"\infected\sounds\hurt3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zpunch1
+	{
+		name = "zombie_punch1";
+		sound[] = {"\infected\sounds\punch1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zpunch2
+	{
+		name = "zombie_punch2";
+		sound[] = {"\infected\sounds\punch2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zpunch3
+	{
+		name = "zombie_punch3";
+		sound[] = {"\infected\sounds\punch3.ogg", 1, 1.0};
+		titles[] = {};
+	};
+	class zpunch4
+	{
+		name = "zombie_punch4";
+		sound[] = {"\infected\sounds\punch4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zidle1
+	{
+		name = "zombie_idle1";
+		sound[] = {"\infected\sounds\idle1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zidle2
+	{
+		name = "zombie_idle2";
+		sound[] = {"\infected\sounds\idle2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zidle3
+	{
+		name = "zombie_idle3";
+		sound[] = {"\infected\sounds\idle3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zidle4
+	{
+		name = "zombie_idle4";
+		sound[] = {"\infected\sounds\idle4.ogg", 1, 1.0};
+		titles[] = {};
+	};
+	class zidle5
+	{
+		name = "zombie_idle5";
+		sound[] = {"\infected\sounds\idle5.ogg", 1, 1};
+		titles[] = {};
+	};
+
+
+	class car_alarm
+    {
+        name = "car_alarm";
+        sound[] = {"\sounds\car_alarm.ogg", 1.0, 1};
+        titles[] = {};
+    };
+};
+
+class CfgDebriefing
+{
+	class NotWhitelisted
+	{
+		title = "Mission Failed";
+		subtitle = "Du bist nicht gewhitelisted für diesen Slot!";
+		description = "Melde dich im TS: xtraders.de um dich für diese Position zu bewerben, wir suchen noch!";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	class Blacklisted
+	{
+		title = "Mission Failed";
+		subtitle = "You are blacklisted from cops";
+		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class SpyGlass
+	{
+		title = "The SpyGlass sees you";
+		subTitle = "You were detected by the SpyGlass";
+		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+};
+
+class CfgNotifications
+{
+	class MedicalRequestEmerg
+	{
+		title = "Medizinischer Notfall";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
+	
+	class DeliveryAssigned
+	{
+		title = "Delivery Job Accepted";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 10;
+		priority = 7;
+	};
+	
+	class DeliveryFailed
+	{
+		title = "Delivery Job Failed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
+	
+	class DeliverySucceeded
+	{
+		title = "Delivery Job Completed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 6;
+		priority = 6;
+	};
+	
+	class AdacMessage
+	{
+		title = "Adac Message";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+    
+    class TextMessage
+	{
+		title = "Sie haben Post";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class PoliceDispatch
+	{
+		title = "911 Dispatch Center";
+		iconPicture = "icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class AdminDispatch
+	{
+		title = "Admin Dispatch Center";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class AdminMessage
+	{
+		title = "Admin Message";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+};

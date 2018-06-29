@@ -1,0 +1,130 @@
+Market
+
+
+
+
+
+
+
+
+
+			case "marijuana": {"life_inv_marijuana"};								marijuana
+			case "oilp": {"life_inv_oilp"};											oilp
+			case "heroinp": {"life_inv_heroinp"};									heroinp
+			case "turtle": {"life_inv_turtle"};										turtle
+			case "iron_r": {"life_inv_ironr"};										iron_r
+			case "copper_r": {"life_inv_copperr"};									copper_r
+			case "salt": {"life_inv_salt"};											salt_r
+			case "glass": {"life_inv_glass"};										glass
+			case "diamondc": {"life_inv_diamondr"};									diamondc
+			case "cocainep": {"life_inv_cokep"};									cocainep
+			case "spikeStrip": {"life_inv_spikeStrip"};								cement
+			case "goldbar": {"life_inv_goldbar"}; 									goldbar
+            case "methp": {"life_inv_methp"};										methp
+            case "moonshine": {"life_inv_moonshine"};								moonshine
+            case "wine": {"life_inv_wine"};											wine
+            case "zigarren": {"life_inv_zigarren"};									zigarren
+            case "zigaretten": {"life_inv_zigaretten"};								zigaretten
+            case "warhead": {"life_inv_warhead"};									warhead
+            case "uran238": {"life_inv_uran238"};									uran238
+
+            Fehlen tun:
+            turtlesoup
+            diamond
+
+
+
+	// MORE JOBS CONFIG
+	case "adac": {["ADAC Item Shop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","lockpick"]]};
+	
+	case "sugar": {["Sugar Trader",["sugar","sugarc"]]};
+	
+	case "Schwarzmarkt": {["Schwarzmarkt",["warhead","zigarren"]]};
+	
+	case "Kraftwerk": {["Kraftwerk",["uran238"]]};
+	
+	case "beer": {["Liqour Store",["wine"]]};
+	
+	case "zigaretten": {["Zigarettenverkauf",["zigaretten"]]};
+
+	case "adacshop": {["ADAC Shop",["water","rabbit","apple","redgull","tbacon","fuelF","peach"]]};
+	
+	case "medicshop": {["Medic Shop",["water","rabbit","apple","redgull","tbacon","fuelF","peach"]]};
+	
+    
+    case "organ": {["Organ Dealer",["kidney"]]}; 
+
+
+
+
+
+
+
+			case "oil": {"life_inv_oil"};
+			case "heroinu": {"life_inv_heroinu"};
+			case "cannabis": {"life_inv_cannabis"};
+			case "apple": {"life_inv_apple"};
+			case "water": {"life_inv_water"};
+			case "rabbit": {"life_inv_rabbit"};
+			case "salema": {"life_inv_salema"};
+			case "ornate": {"life_inv_ornate"};
+			case "mackerel": {"life_inv_mackerel"};
+			case "tuna": {"life_inv_tuna"};
+			case "mullet": {"life_inv_mullet"};
+			case "catshark": {"life_inv_catshark"};
+			case "fishing": {"life_inv_fishingpoles"};
+			case "coffee": {"life_inv_coffee"};
+			case "turtlesoup": {"life_inv_turtlesoup"};
+			case "donuts": {"life_inv_donuts"};
+			case "fuelE": {"life_inv_fuelE"};
+			case "fuelF": {"life_inv_fuelF"};
+			case "money": {"life_cash"};
+			case "pickaxe": {"life_inv_pickaxe"};
+			case "copperore": {"life_inv_copperore"};
+			case "ironore": {"life_inv_ironore"};
+			case "salt_r": {"life_inv_saltr"};
+			case "sand": {"life_inv_sand"};		
+			case "tbacon": {"life_inv_tbacon"};
+			case "lockpick": {"life_inv_lockpick"};
+			case "redgull": {"life_inv_redgull"};
+			case "peach": {"life_inv_peach"};
+			case "diamond": {"life_inv_diamond"};
+			case "cocaine": {"life_inv_coke"};
+			case "cement": {"life_inv_cement"};
+			case "rock": {"life_inv_rock"};
+			case "blastingcharge": {"life_inv_blastingcharge"};
+			case "boltcutter": {"life_inv_boltcutter"};
+			case "defusekit": {"life_inv_defusekit"};
+			case "storagesmall": {"life_inv_storagesmall"};
+			case "storagebig": {"life_inv_storagebig"};
+			case "goldbarp": {"life_inv_goldbarp"};
+            case "underwatercharge": {"life_inv_underwatercharge"};
+            case "methu": {"life_inv_methu"};
+            case "rye": {"life_inv_rye"};
+            case "hops": {"life_inv_hops"};
+            case "yeast": {"life_inv_yeast"};
+            case "cornmeal": {"life_inv_cornmeal"};
+            case "grapes": {"life_inv_grapes"};	
+            case "tabak": {"life_inv_tabak"};	
+            case "uran": {"life_inv_uran"};	   
+			case "copper_r": {"life_inv_copper_r"}; 
+			case "iron_r": {"life_inv_iron_r"};
+			case "iron_r":  {"life_inv_salt_r"};
+			case "gold": {"life_inv_gold"}; 
+			case "silverc": {"life_inv_silverc"}; 
+			case "silver": {"life_inv_silver"}; 
+			case "sugarc": {"life_inv_sugarc"}; 
+			case "sugar": {"life_inv_sugar"}; 
+			case "kokainc": {"life_inv_kokainc"}; 
+			case "kokain": {"life_inv_kokain"}; 
+			case "uranp": {"life_inv_uranp"}; 
+			case "froglsd": {"life_inv_froglsd"};
+			case "cocainep": {"life_inv_cocainep"}; 
+            case "bottles": {"life_inv_bottles"};
+            case "bottledshine": {"life_inv_bottledshine"};
+            case "bottledbeer": {"life_inv_bottledbeer"};
+            case "bottledwhiskey": {"life_inv_bottledwhiskey"};
+            case "beerp": {"life_inv_beerp"};
+            case "whiskey": {"life_inv_whiskey"};
+            case "mash": {"life_inv_mash"};
+            case "kidney": {"life_inv_kidney"};

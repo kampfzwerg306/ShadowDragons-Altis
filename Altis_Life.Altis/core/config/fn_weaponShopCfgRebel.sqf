@@ -1,0 +1,47 @@
+private["_shop"];
+_shop = ["Mohammed Jihadanis Waffenlager",
+   	[
+
+   		["hgun_Pistol_heavy_02_F",nil,2500],
+   		["6Rnd_45ACP_Cylinder",nil,2500],
+   		["arifle_Katiba_F","Katiba",160000],
+   		["arifle_Katiba_C_F","Katiba C",140000],
+   		["30Rnd_65x39_caseless_green","Katiba Munition", 5000],
+   		["arifle_Mk20_F","MK 20",150000],
+   		["arifle_Mk20C_F","MK 20C",140000],
+   		["30Rnd_556x45_Stanag","Mk20 Magazin",3200],
+   		["arifle_TRG20_F",nil,140000],
+   		["arifle_TRG21_F",nil,155000],
+  		["30Rnd_556x45_Stanag",nil,3200],
+  		["hgun_PDW2000_F",nil,90000],
+  		["16Rnd_9x21_Mag",nil,400],
+  		["30Rnd_9x21_Mag",nil,1000],
+		["srifle_DMR_01_F",nil,620000],
+		["10Rnd_762x51_Mag",nil,5000],
+     	["optic_Holosight",nil,2500],
+     	["optic_ACO_grn",nil,2500],
+     	["optic_Arco",nil,5000],
+     	["optic_NVS",nil,5000],		
+  		["optic_MRCO",nil,5000],	
+  		["optic_DMS",nil,7000],	
+  		["optic_Hamr",nil,5000],
+      ["muzzle_snds_B",nil,10000],
+      ["muzzle_snds_H",nil,10000],
+      ["muzzle_snds_acp",nil,10000],    
+      ["muzzle_snds_L",nil,10000],    
+      ["muzzle_snds_M",nil,10000],    
+      ["muzzle_snds_H_MG",nil,10000],    
+  		["Binocular","Fernglas",150],
+  		["ItemGPS","GPS Gerät",100],
+  		["ItemCompass","Kompass",100],
+  		["ItemRadio","Funkgerät",100],
+  		["ItemMap","Karte",100],
+  		["FirstAidKit","Erste Hilfe Pack",500],
+  		["ToolKit","Werkzeugkasten",2500],
+  		["NVGoggles","Nachtsicht",2000],
+		  ["Rangefinder","Entfernungsmesser",50000],
+      ["H_PilotHelmetFighter_B", "Tränengashelm", 25000]
+	]
+];
+
+_shop;
